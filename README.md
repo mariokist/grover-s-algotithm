@@ -9,20 +9,24 @@ Este pequeno projeto simula o **Algoritmo de Grover**, utilizado em computação
 O Algoritmo de Grover realiza uma **amplificação de amplitudes** para o estado desejado (marcado), utilizando:
 
 1. **Operador Hadamard - Superposição inicial** com portas de Hadamard (`H⊗n`):  
-   Transforma o estado `|0⟩` em uma superposição uniforme:
-   \[
-   |\psi⟩ = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} |x⟩
-   \]
+   Transforma o estado $|0⟩$ em uma superposição uniforme:
+
+$$
+\left|\psi\right⟩ = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \left|x\right⟩
+$$
+
 
 2. **Operador Oracle (O<sub>f</sub>)**:  
    Inverte a fase do estado marcado `|w⟩`:
-   \[
-   O_f|x⟩ = 
-   \begin{cases}
-   -|x⟩ & \text{se } x = w \\
-   |x⟩ & \text{caso contrário}
-   \end{cases}
-   \]
+
+$$
+O_f |x⟩ = 
+\begin{cases}
+-|x⟩ & \text{se } x = w \\\\
+|x⟩ & \text{caso contrário}
+\end{cases}
+$$
+
 
 3. **Operador de Difusão (D)**:  
    Reflete o vetor de estado em relação à média das amplitudes, amplificando a amplitude de `|w⟩`.
@@ -36,9 +40,9 @@ O Algoritmo de Grover realiza uma **amplificação de amplitudes** para o estado
 - `|w⟩`: Estado marcado aleatório.
 - `|w⊥⟩`: Componente ortogonal a `|w⟩` no subespaço bidimensional da evolução.
 - Operador de Grover:  
-  \[
+  $$
   G = D \cdot O_f
-  \]
+  $$
 
 A cada iteração, o estado `|ψ⟩` é rotacionado no plano formado por `|w⟩` e `|w⊥⟩`, aproximando-se cada vez mais de `|w⟩`.
 
