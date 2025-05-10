@@ -77,6 +77,6 @@ O gráfico ilustra geometricamente a convergência do estado quântico para `|w�
 Execute com:
 
 ```bash
-python grover_simulador.py
+jupyter Algoritimo de Grover.ipynb
 
 
