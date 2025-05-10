@@ -41,9 +41,10 @@ $$
 - `|w⟩`: Estado marcado aleatório.
 - `|w⊥⟩`: Componente ortogonal a `|w⟩` no subespaço bidimensional da evolução.
 - Operador de Grover:  
-  $
-  G = D \cdot O_f
-  $
+$$
+G = D \cdot O_f
+$$
+
 
 
 
