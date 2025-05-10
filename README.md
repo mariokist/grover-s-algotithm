@@ -12,8 +12,9 @@ O Algoritmo de Grover realiza uma **amplificação de amplitudes** para o estado
    Transforma o estado $|0⟩$ em uma superposição uniforme:
 
 $$
-\left|\psi\right⟩ = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \left|x\right⟩
+\lvert \psi \rangle = \frac{1}{\sqrt{N}} \sum_{x=0}^{N-1} \lvert x \rangle
 $$
+
 
 
 2. **Operador Oracle (O<sub>f</sub>)**:  
